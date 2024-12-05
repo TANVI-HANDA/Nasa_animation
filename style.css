@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main1{
+    height: 100%;
+    width: 100%;
+    background-color: #a6c2f0;
+    position: absolute;
+    z-index: 2; 
+    animation-name: main1;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes main1 {
+    from{
+        bottom: 0%;
+    }
+    to{
+        bottom: 100%;
+    }
+}
+#nasa{
+    width: 30%;
+    height: 30%;
+}
+#nasa>img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 8%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main2{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 1; 
+    animation-name: main2;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes main2 {
+    from{
+        bottom: 0%;
+    }
+    to{
+        bottom: 100%;
+    }
+}
+#main3{
+    width: 100%;
+    height: 100%;
+
+}
+#main3>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#nav{
+    width: 100%;
+    height: 15%;
+    /* background-color: plum; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    font-weight: 800;
+}
+#left>img{
+    width: 12%;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 10px;
+    color: grey;
+    font-weight: 600;
+}
+select:hover {
+    border-color: #888;
+}
+#content{
+    width: 60%;
+    height: 60%;
+    /* background-color: cornflowerblue; */
+    position: absolute;
+     /* position: relative; */
+    top: 30%;
+    left: 10%;
+    padding: 30px;
+    color: white;
+    text-align: left;
+
+}
+#content>h3{
+    font-weight: 900;
+
+}
+span{
+    color: red;
+    font-style: italic;
+    font-size: 40px;
+    margin-right: 10px;
+}
+#content>h2{
+    font-style: italic;
+}
+#content>h1{
+    font-size: 200px;
+    font-weight: 800;
+    margin-top: -45px;
+}
+#content>p{
+    font-size: 10px;
+    margin-right: 280px;
+    margin-top: -25px;
+}
+
